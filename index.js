@@ -8,18 +8,7 @@ const path = require("path");
 //priode waktu yang dimulai ketika seorang pengguna mulai berinteraksi hingga berakhirnya interaksi. Session juga menyimpan data pengguna untuk berinteraksi.
 const session = require("express-session");
 const MySQLStore = require("express-mysql-session")(session);
-const fs = require("fs-extra");
 
-// Baca file JSON
-fs.readJson("vercel.json", (err, jsonData) => {
-  if (err) {
-    console.error("Error reading JSON file:", err);
-    return;
-  }
-
-  // Gunakan jsonData dalam aplikasi Express.js Anda
-  // Simpan jsonData dalam variabel atau gunakan sesuai kebutuhan
-});
 
 //menerima permintaan dari user
 app.use(bodyparser.urlencoded({ extended: true }));
