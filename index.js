@@ -1,5 +1,5 @@
 var express = require("express");
-const port = 2000;
+const port = process.env.PORT || 2000;
 var app = express();
 const router = require("./router/router");
 const bodyparser = require("body-parser");
