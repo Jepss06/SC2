@@ -11,7 +11,7 @@ const MySQLStore = require("express-mysql-session")(session);
 const fs = require("fs-extra");
 
 // Baca file JSON
-fs.readJson("./vercel.json", (err, jsonData) => {
+fs.readJson("vercel.json", (err, jsonData) => {
   if (err) {
     console.error("Error reading JSON file:", err);
     return;
