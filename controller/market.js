@@ -91,9 +91,9 @@ const pilihBarang = (req, res) => {
       res.render("barang", {
         bar: barang,
         idJ: id,
-        transaksi,
+        transaksi: "",
         formatSaldo,
-        total,
+        total: "",
         user: "",
       });
     }
